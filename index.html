@@ -168,7 +168,7 @@
         /* === ФОТО === */
         .photo-slide {
             position: fixed;
-            bottom: 3%;
+            top: 50%;
             z-index: 9997;
             transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
@@ -182,16 +182,16 @@
 
         .photo-left {
             left: 10px;
-            transform: translateX(-120%);
+            transform: translate(-120%, -50%);
         }
 
         .photo-right {
             right: 10px;
-            transform: translateX(120%);
+            transform: translate(120%, -50%);
         }
 
         .photo-slide.visible {
-            transform: translateX(0);
+            transform: translate(0, -50%);
         }
 
         @media (max-width: 860px) {
